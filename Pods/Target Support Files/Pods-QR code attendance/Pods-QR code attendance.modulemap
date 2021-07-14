@@ -1,0 +1,6 @@
+framework module Pods_QR_code_attendance {
+  umbrella header "Pods-QR code attendance-umbrella.h"
+
+  export *
+  module * { export * }
+}

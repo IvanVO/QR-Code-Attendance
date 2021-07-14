@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		553E7D1626877D43003B3248 /* QR_code_attendanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E7D1526877D43003B3248 /* QR_code_attendanceApp.swift */; };
+		553E7D1A26877D43003B3248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553E7D1926877D43003B3248 /* Assets.xcassets */; };
+		553E7D1D26877D43003B3248 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553E7D1C26877D43003B3248 /* Preview Assets.xcassets */; };
+		5556FAFE268CDAFA00791595 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5556FAFD268CDAFA00791595 /* GoogleService-Info.plist */; };
+		55A38D21269E44C1006C1EDD /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A38D20269E44C1006C1EDD /* CourseDetailView.swift */; };
+		55A38D23269E4EB3006C1EDD /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A38D22269E4EB3006C1EDD /* QRCodeGenerator.swift */; };
+		55AB8CC526976EA9001671C3 /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB8CC426976EA9001671C3 /* CourseListView.swift */; };
+		55AB8CC8269771D3001671C3 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB8CC7269771D3001671C3 /* SignInView.swift */; };
+		55AB8CCA26977BF5001671C3 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB8CC926977BF5001671C3 /* Course.swift */; };
+		76BB0A45268E1B43F8C541E3 /* Pods_QR_code_attendance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8BA36DE56F339DDE634D350 /* Pods_QR_code_attendance.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0357F8C3C60C84BC0D467539 /* Pods-QR code attendance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QR code attendance.release.xcconfig"; path = "Target Support Files/Pods-QR code attendance/Pods-QR code attendance.release.xcconfig"; sourceTree = "<group>"; };
+		553E7D1226877D43003B3248 /* QR code attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QR code attendance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		553E7D1526877D43003B3248 /* QR_code_attendanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QR_code_attendanceApp.swift; sourceTree = "<group>"; };
+		553E7D1926877D43003B3248 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		553E7D1C26877D43003B3248 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		553E7D1E26877D43003B3248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5556FAFD268CDAFA00791595 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		55A38D20269E44C1006C1EDD /* CourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
+		55A38D22269E4EB3006C1EDD /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
+		55AB8CC426976EA9001671C3 /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
+		55AB8CC7269771D3001671C3 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		55AB8CC926977BF5001671C3 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		B547F86CD9D8A3CF52ABCDB3 /* Pods-QR code attendance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QR code attendance.debug.xcconfig"; path = "Target Support Files/Pods-QR code attendance/Pods-QR code attendance.debug.xcconfig"; sourceTree = "<group>"; };
+		B8BA36DE56F339DDE634D350 /* Pods_QR_code_attendance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QR_code_attendance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		553E7D0F26877D43003B3248 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BB0A45268E1B43F8C541E3 /* Pods_QR_code_attendance.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		553E7D0926877D43003B3248 = {
+			isa = PBXGroup;
+			children = (
+				553E7D1426877D43003B3248 /* QR code attendance */,
+				553E7D1326877D43003B3248 /* Products */,
+				ADEB92B8B6F62B0BFB1DDF33 /* Pods */,
+				96AA5C60DBD5C8995ED95AD1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		553E7D1326877D43003B3248 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				553E7D1226877D43003B3248 /* QR code attendance.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		553E7D1426877D43003B3248 /* QR code attendance */ = {
+			isa = PBXGroup;
+			children = (
+				553E7D1526877D43003B3248 /* QR_code_attendanceApp.swift */,
+				55AE3C6F268CE12D00ED0518 /* Views */,
+				553E7D1926877D43003B3248 /* Assets.xcassets */,
+				5556FAFD268CDAFA00791595 /* GoogleService-Info.plist */,
+				553E7D1E26877D43003B3248 /* Info.plist */,
+				553E7D1B26877D43003B3248 /* Preview Content */,
+			);
+			path = "QR code attendance";
+			sourceTree = "<group>";
+		};
+		553E7D1B26877D43003B3248 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				553E7D1C26877D43003B3248 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		55AE3C6F268CE12D00ED0518 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55AB8CC7269771D3001671C3 /* SignInView.swift */,
+				55AB8CC426976EA9001671C3 /* CourseListView.swift */,
+				55AB8CC926977BF5001671C3 /* Course.swift */,
+				55A38D20269E44C1006C1EDD /* CourseDetailView.swift */,
+				55A38D22269E4EB3006C1EDD /* QRCodeGenerator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		96AA5C60DBD5C8995ED95AD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8BA36DE56F339DDE634D350 /* Pods_QR_code_attendance.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADEB92B8B6F62B0BFB1DDF33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B547F86CD9D8A3CF52ABCDB3 /* Pods-QR code attendance.debug.xcconfig */,
+				0357F8C3C60C84BC0D467539 /* Pods-QR code attendance.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		553E7D1126877D43003B3248 /* QR code attendance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553E7D2126877D43003B3248 /* Build configuration list for PBXNativeTarget "QR code attendance" */;
+			buildPhases = (
+				D156F84C513F9B393354A31C /* [CP] Check Pods Manifest.lock */,
+				553E7D0E26877D43003B3248 /* Sources */,
+				553E7D0F26877D43003B3248 /* Frameworks */,
+				553E7D1026877D43003B3248 /* Resources */,
+				43CD78B27A70332407E2C442 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QR code attendance";
+			productName = "QR code attendance";
+			productReference = 553E7D1226877D43003B3248 /* QR code attendance.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		553E7D0A26877D43003B3248 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					553E7D1126877D43003B3248 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 553E7D0D26877D43003B3248 /* Build configuration list for PBXProject "QR code attendance" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 553E7D0926877D43003B3248;
+			productRefGroup = 553E7D1326877D43003B3248 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				553E7D1126877D43003B3248 /* QR code attendance */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		553E7D1026877D43003B3248 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553E7D1D26877D43003B3248 /* Preview Assets.xcassets in Resources */,
+				553E7D1A26877D43003B3248 /* Assets.xcassets in Resources */,
+				5556FAFE268CDAFA00791595 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43CD78B27A70332407E2C442 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QR code attendance/Pods-QR code attendance-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QR code attendance/Pods-QR code attendance-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QR code attendance/Pods-QR code attendance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D156F84C513F9B393354A31C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QR code attendance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		553E7D0E26877D43003B3248 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A38D21269E44C1006C1EDD /* CourseDetailView.swift in Sources */,
+				55A38D23269E4EB3006C1EDD /* QRCodeGenerator.swift in Sources */,
+				55AB8CCA26977BF5001671C3 /* Course.swift in Sources */,
+				553E7D1626877D43003B3248 /* QR_code_attendanceApp.swift in Sources */,
+				55AB8CC526976EA9001671C3 /* CourseListView.swift in Sources */,
+				55AB8CC8269771D3001671C3 /* SignInView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		553E7D1F26877D43003B3248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		553E7D2026877D43003B3248 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		553E7D2226877D43003B3248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B547F86CD9D8A3CF52ABCDB3 /* Pods-QR code attendance.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"QR code attendance/Preview Content\"";
+				DEVELOPMENT_TEAM = NGBA5QG5TU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "QR code attendance/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivanvillanueva.QR-code-attendance";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		553E7D2326877D43003B3248 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0357F8C3C60C84BC0D467539 /* Pods-QR code attendance.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"QR code attendance/Preview Content\"";
+				DEVELOPMENT_TEAM = NGBA5QG5TU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "QR code attendance/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivanvillanueva.QR-code-attendance";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		553E7D0D26877D43003B3248 /* Build configuration list for PBXProject "QR code attendance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553E7D1F26877D43003B3248 /* Debug */,
+				553E7D2026877D43003B3248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553E7D2126877D43003B3248 /* Build configuration list for PBXNativeTarget "QR code attendance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553E7D2226877D43003B3248 /* Debug */,
+				553E7D2326877D43003B3248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 553E7D0A26877D43003B3248 /* Project object */;
+}
