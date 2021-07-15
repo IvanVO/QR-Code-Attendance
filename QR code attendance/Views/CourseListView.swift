@@ -4,7 +4,7 @@
 //
 //  Created by Ivan Villanueva on 08/07/21.
 //
-
+import Foundation
 import SwiftUI
 
 struct CourseListView: View {
@@ -15,7 +15,7 @@ struct CourseListView: View {
         List {
             ForEach(course.courses) { course in
                 NavigationLink(
-                    destination: CourseDetailView(courseName: course.courseName, courseID: course.courseID), label: {
+                    destination: CourseDetailView(courseName: course.courseName, courseID: course.courseID, classDays: course.classDays, classTime: course.classTime), label: {
                         CourseCell(course: course)
                     })
             }
@@ -33,17 +33,22 @@ struct CourseCell: View {
     var course: CourseInfo
     
     var body: some View {
-        VStack(alignment:.leading, spacing: 3) {
+        VStack(alignment:.leading, spacing: 1) {
             
             Text(course.courseName)
-                .font(.title2)
+                .font(.headline)
                 .fontWeight(.semibold)
                 .lineLimit(2)
                 .minimumScaleFactor(0.5)
             
-            Text("Total de alumnos: \(course.totalStudents)")
-            
             Text("ID: \(course.courseID)")
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+            Text("Alumnos: \(course.totalStudents)")
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+            
+            
         }
     }
 }

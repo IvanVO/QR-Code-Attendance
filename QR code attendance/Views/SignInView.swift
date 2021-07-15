@@ -52,7 +52,8 @@ struct ContentView: View {
                 SignInView()
                     .navigationTitle("Iniciar Sesión")
             }
-        }.padding()
+        }
+        .padding()
         .offset(y:-60)
         .onAppear { // Auto sign in.
             signInVM.signedIn = signInVM.isSignedIn
@@ -63,6 +64,7 @@ struct ContentView: View {
 struct SignInView: View {
     @State var email:String = ""
     @State var password:String = ""
+    @State var checkState:Bool = false
     @EnvironmentObject var signInVM: SignInViewModel
     
     var body: some View {
@@ -70,11 +72,33 @@ struct SignInView: View {
             TextField("Correo elctrónico", text:$email)
                 .disableAutocorrection(true)
                 .autocapitalization(.none)
-           
+            
             SecureField("Constraseña", text:$password)
                 .disableAutocorrection(true)
                 .autocapitalization(.none)
             
+           /* Button(action: {
+                // 1. Save State
+                self.checkState = !self.checkState
+                if self.checkState {
+                    signInVM.signedIn = true
+                }
+                print("State: \(self.checkState)")
+            }, label: {
+                HStack(alignment: .center, spacing: 10) {
+                    Image(systemName: self.checkState ? "checkmark.square.fill": "square")
+                        .renderingMode(.original)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 15, height: 15)
+                    Text("Mantener sesión iniciada")
+                        .font(Font.system(size: 16))
+                        
+                    Spacer()
+                }
+                .foregroundColor(.black)
+            }).foregroundColor(Color(.systemPink)) */
+        
             Button(action: {
                 guard !email.isEmpty, !password.isEmpty else {
                     return

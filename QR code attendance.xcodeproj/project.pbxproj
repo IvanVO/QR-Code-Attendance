@@ -10,6 +10,7 @@
 		553E7D1626877D43003B3248 /* QR_code_attendanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E7D1526877D43003B3248 /* QR_code_attendanceApp.swift */; };
 		553E7D1A26877D43003B3248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553E7D1926877D43003B3248 /* Assets.xcassets */; };
 		553E7D1D26877D43003B3248 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553E7D1C26877D43003B3248 /* Preview Assets.xcassets */; };
+		554E6B25269F91CF004484D5 /* TMA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554E6B24269F91CF004484D5 /* TMA.swift */; };
 		5556FAFE268CDAFA00791595 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5556FAFD268CDAFA00791595 /* GoogleService-Info.plist */; };
 		55A38D21269E44C1006C1EDD /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A38D20269E44C1006C1EDD /* CourseDetailView.swift */; };
 		55A38D23269E4EB3006C1EDD /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A38D22269E4EB3006C1EDD /* QRCodeGenerator.swift */; };
@@ -26,6 +27,7 @@
 		553E7D1926877D43003B3248 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		553E7D1C26877D43003B3248 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		553E7D1E26877D43003B3248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		554E6B24269F91CF004484D5 /* TMA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMA.swift; sourceTree = "<group>"; };
 		5556FAFD268CDAFA00791595 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		55A38D20269E44C1006C1EDD /* CourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
 		55A38D22269E4EB3006C1EDD /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				553E7D1526877D43003B3248 /* QR_code_attendanceApp.swift */,
 				55AE3C6F268CE12D00ED0518 /* Views */,
+				554E6B23269F3612004484D5 /* Model */,
 				553E7D1926877D43003B3248 /* Assets.xcassets */,
 				5556FAFD268CDAFA00791595 /* GoogleService-Info.plist */,
 				553E7D1E26877D43003B3248 /* Info.plist */,
@@ -87,14 +90,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		554E6B23269F3612004484D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55AB8CC926977BF5001671C3 /* Course.swift */,
+				55A38D22269E4EB3006C1EDD /* QRCodeGenerator.swift */,
+				554E6B24269F91CF004484D5 /* TMA.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		55AE3C6F268CE12D00ED0518 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				55AB8CC7269771D3001671C3 /* SignInView.swift */,
 				55AB8CC426976EA9001671C3 /* CourseListView.swift */,
-				55AB8CC926977BF5001671C3 /* Course.swift */,
 				55A38D20269E44C1006C1EDD /* CourseDetailView.swift */,
-				55A38D22269E4EB3006C1EDD /* QRCodeGenerator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -232,6 +243,7 @@
 			files = (
 				55A38D21269E44C1006C1EDD /* CourseDetailView.swift in Sources */,
 				55A38D23269E4EB3006C1EDD /* QRCodeGenerator.swift in Sources */,
+				554E6B25269F91CF004484D5 /* TMA.swift in Sources */,
 				55AB8CCA26977BF5001671C3 /* Course.swift in Sources */,
 				553E7D1626877D43003B3248 /* QR_code_attendanceApp.swift in Sources */,
 				55AB8CC526976EA9001671C3 /* CourseListView.swift in Sources */,

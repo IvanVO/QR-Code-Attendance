@@ -14,7 +14,10 @@ struct CourseInfo:Identifiable {
     let courseName: String
     let totalStudents: Int
     let courseID: String
+    let classDays: [Int]
+    let classTime: [String:String]
 }
+
 
 class Course: ObservableObject {
     let user = Auth.auth().currentUser
@@ -46,23 +49,29 @@ class Course: ObservableObject {
         var courseName: String = ""
         var students: [Any] = []
         var courseID: String = ""
+        var days: [Int] = []
+        var time: [String:String] = [:]
         
         for (key, value) in courseInfo {
             if key == "Teacher" && value as! String == user!.uid {
                 for (key, value) in courseInfo {
-                    if key == "Course Name" {
+                    switch key {
+                    case "Course Name":
                         courseName = value as! String
-                    }
-                    else if key == "Course ID" {
+                    case "Course ID":
                         courseID = value as! String
-                    }
-                    else if key == "Students"{
+                    case "Students":
                         students = value as! Array<Any>
+                    case "Class days":
+                        days = value as! Array<Int>
+                    case "Class time":
+                        time = value as! Dictionary<String,String>
+                    default:
+                        let _ = "DEFAULT"
                     }
                 }
-                self.courses.append(CourseInfo(courseName: courseName, totalStudents: students.count, courseID: courseID))
+                self.courses.append(CourseInfo(courseName: courseName, totalStudents: students.count, courseID: courseID, classDays: days, classTime: time))
             }
         }
-        
     } // end manageData()
 }
