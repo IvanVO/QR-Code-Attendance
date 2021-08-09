@@ -12,10 +12,7 @@ This QR code is generated only when time and day there is a class and it gets de
 ## Screenshots
 <p float="left">
   <img width="239" height="410" alt="Sign In" src="https://user-images.githubusercontent.com/35877147/128759689-f3e2e148-f93c-4cf3-b4a2-3ce926b40ec2.png">
-  <br>
   <img width="239" height="410" alt="List of courses" src="https://user-images.githubusercontent.com/35877147/128758506-0dd849c4-f657-476b-bb08-995c417930c3.png">
-  <br>
   <img width="239" height="410" alt="with QR code" src="https://user-images.githubusercontent.com/35877147/128759118-af5c1a01-0f12-4e16-ba8f-b1c8641b67ab.png">
-  <br>
   <img width="239" height="410" alt="without QR code" src="https://user-images.githubusercontent.com/35877147/128759157-2ce08bd3-42b4-4dc9-ab38-e315490ee832.png">
 </p>
