@@ -1,4 +1,7 @@
 # QR-Code-Attendance
 
 ## Description
-lfksl
+This project
+
+## Interface
+<img width="396" alt="image" src="https://user-images.githubusercontent.com/35877147/128754629-95a65f6c-a6b7-45df-a888-fe578b6d61d4.png">
